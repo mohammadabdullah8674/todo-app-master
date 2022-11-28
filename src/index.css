@@ -1,13 +1,151 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: -0.045em;
+    color: #333333;
+}
+.container {
+    width: 70%;
+}
+.tabs {
+    margin-top: 2rem;
+    margin-bottom: .6em;
+    border-bottom: 2px solid #BDBDBD;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;    
+    align-items: center;
+}
+.tabs button {
+    border: none;
+    background: transparent;
+    padding: .6rem .3rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333333;
+    margin-right: 2px;
+    /* border-bottom: 3px solid #2F80ED; */
+    cursor: pointer;
+}
+
+.tabs .count {
+    background: #2F80ED;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    padding: 4px;
+    font-size: .7em;
+    border-radius: 2px;
+}
+/* .tabs button::after {
+    content: "a";
+    width: 2rem;
+    background: #2F80ED;
+    border-radius: 4px 4px 0px 0px;
+} */
+.search {
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+input[type = "text"] {
+    outline: none;
+    border: 1px solid #BDBDBD;
+    border-radius: 12px;        
+    padding: 1em .75em;
+    width: 90%;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 17px;
+    color: #828282;
+}
+.search button {
+    border: none;
+    background: #2F80ED;
+    color: #fff;
+    padding: 1em 2em;
+    box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+    border-radius: 12px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+.todoList {
+    margin-top: 2rem;
+    width: 100%;
+}
+.todoList .deleteAll {
+    width: 100%;
+    margin-top: 2rem;
+}
+.todoList .deleteAllBtn {
+   padding: 1em 1.5em;
+   border: none;
+   background: #EB5757;
+   border-radius: 4px;
+   color: #fff;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: auto;
+   width: 10em;
+   cursor: pointer;
+   font-weight: 600;
+   font-size: .8em;
+}
+.deleteAllBtn p {
+    margin-left: .4em;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+
+}
+.item {
+    /* background-color: #2F80E/D; */
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 22px;
+}
+input[type = "checkbox"] {
+    border: 2px solid #828282;
+    border-radius: 4px;
+    margin-right: 1em;
+    width: 24px;
+    height: 24px;
+}
+.deleteLogo {
+    color: #BDBDBD;
+    cursor: pointer;
 }
