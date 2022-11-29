@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">TODO APP MASTER | MOHD ABDULLAH | devChallenges</h1>
+<h1 align="center">TODO APP MASTER | ABDULLAH | devChallenges</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://team-page-abdullah.netlify.app/">
+    <a href="https://todo-app-master-abdullah.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/mohammadabdullah8674/myTeamPage">
+    <a href="https://github.com/mohammadabdullah8674/todo-app-master">
       Solution
     </a>
     <span> | </span>
@@ -35,14 +35,18 @@
 
 ## Overview
 
-![screenshot](https://github.com/mohammadabdullah8674/myTeamPage/blob/master/teamScreemshot.JPG)
+![screenshot](https://github.com/mohammadabdullah8674/todo-app-master/blob/Main/public/images/Screenshot%201.JPG)
+![screenshot](https://github.com/mohammadabdullah8674/todo-app-master/blob/Main/public/images/Screenshot%203.JPG)
+![screenshot](https://github.com/mohammadabdullah8674/todo-app-master/blob/Main/public/images/Screenshot%202.JPG)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
+- You can see it on netlify link has given above.
 - What was your experience?
+- I learnt a lot from this project about react this makes my most of the react funda clear.
 - What have you learned/improved?
-- Your wisdom? :)
+- I have now better understanding of Hooks like useState, useEffect, useContext  
 
 
 
@@ -55,5 +59,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ## Contact
 
 - Website [your-website.com](https://mohd-abdullah-personal-portfolio.vercel.app/)
-- GitHub [@your-username](https://github.com/mohammadabdullah8674/404page)
+- GitHub [@your-username](https://github.com/mohammadabdullah8674/)
 
