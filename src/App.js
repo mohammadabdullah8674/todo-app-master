@@ -11,9 +11,8 @@ const App = () => {
 
   const [list, setList] = useState(JSON.parse( localStorage.getItem("todoLocal")) || []);
   useEffect(()=> {
-    console.log(list);
     if(list.length === 0) {
-      return
+      return localStorage.clear();
     }
     if(list.length) {
       localStorage.setItem("todoLocal", JSON.stringify(list));
@@ -35,10 +34,9 @@ const App = () => {
   }
 
   function deleteItem(id) {
-    setList(prevList =>  prevList.filter(item => item.id !== id))
+    setList(prevList =>  prevList?.filter(item => item.id !== id));
   }
   function completeItem(id) {
-    console.log("Hi complte calling", id);
     setList(prevList => {
       const newList = prevList.map(item => {
         if(item.id === id) {
@@ -57,8 +55,13 @@ const App = () => {
 
   }
   function clearAll() {
-    setList([]);
-    localStorage.clear();
+    const sure =  window.confirm("Are you sure??");
+    if(sure) {
+      setList([]);
+      localStorage.clear();
+    } else {
+      return
+    }
   }
 
 
